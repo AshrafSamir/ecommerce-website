@@ -6,7 +6,7 @@ import arrow from "../assets/arrow-down-sign-to-navigate.png";
 
 const AppHeader = styled.header`
   display: flex;
-  position: absolute;
+  position: fixed;
   background-color: white;
   width: 100vw;
   height: 7vh;
@@ -36,9 +36,15 @@ const CartCurrencyDiv = styled.div`
 `;
 
 const NavigationLinks = styled.a`
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+
   &:link,
   &:visited {
-    color: black;
+    color: #1d1f22;
     padding: 25px;
     text-align: center;
     text-decoration: none;
@@ -80,28 +86,26 @@ const ImageCart = styled.img`
 
 export default function Header() {
   return (
-    <div>
-      <AppHeader>
-        <NavigationLinksDiv>
-          <NavigationLinks href="url">WOMEN</NavigationLinks>
-          <NavigationLinks href="url">MEN</NavigationLinks>
-          <NavigationLinks href="url">KIDS</NavigationLinks>
-        </NavigationLinksDiv>
+    <AppHeader>
+      <NavigationLinksDiv>
+        <NavigationLinks href="url">WOMEN</NavigationLinks>
+        <NavigationLinks href="url">MEN</NavigationLinks>
+        <NavigationLinks href="url">KIDS</NavigationLinks>
+      </NavigationLinksDiv>
 
-        <LogoDiv>
-          <ImageLogo src={logo} alt="logo" />
-        </LogoDiv>
+      <LogoDiv>
+        <ImageLogo src={logo} alt="logo" />
+      </LogoDiv>
 
-        <CartCurrencyDiv>
-          <Button type="button">
-            <DropDownArrow src={arrow} alt="arrow" />
-          </Button>
+      <CartCurrencyDiv>
+        <Button type="button">
+          <DropDownArrow src={arrow} alt="arrow" />
+        </Button>
 
-          <Button type="button">
-            <ImageCart src={cartLogo} alt="logo" />
-          </Button>
-        </CartCurrencyDiv>
-      </AppHeader>
-    </div>
+        <Button type="button">
+          <ImageCart src={cartLogo} alt="logo" />
+        </Button>
+      </CartCurrencyDiv>
+    </AppHeader>
   );
 }

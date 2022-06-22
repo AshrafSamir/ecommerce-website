@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import Header from "./components/Header";
+// import Header from "./components/Header";
+import ProductListing from "./pages/ProductListing";
 
 const ContainerDiv = styled.div`
-  position: relative;
+  display: relative;
+  overflow: auto;
   background-color: white;
   height: 100vh;
 `;
@@ -11,7 +13,7 @@ const ContainerDiv = styled.div`
 function App() {
   return (
     <ContainerDiv>
-      <Header />
+      <ProductListing />
     </ContainerDiv>
   );
 }
