@@ -1,7 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 // import Header from "./components/Header";
-import ProductListing from "./pages/ProductListing";
+// import CategoryPage from "./pages/CategoryPage";
+// import ProductForm from "./components/ProductForm";
+// import Productage from "./pages/ProductPage";
+import CartItem from "./components/CartItem";
 
 const ContainerDiv = styled.div`
   display: relative;
@@ -13,7 +16,7 @@ const ContainerDiv = styled.div`
 function App() {
   return (
     <ContainerDiv>
-      <ProductListing />
+      <CartItem />
     </ContainerDiv>
   );
 }

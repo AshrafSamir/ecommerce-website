@@ -10,9 +10,9 @@ const ContainerDiv = styled.div`
   align-items: center;
 
   padding: 16px;
-  margin: 1%;
+  margin: 15px;
 
-  width: 26vw;
+  width: 386px;
 
   background: #ffffff;
 

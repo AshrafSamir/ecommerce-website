@@ -76,8 +76,8 @@ const DropDownArrow = styled.img`
 `;
 
 const ImageLogo = styled.img`
-  width: 30px;
-  height: 30px;
+  width: 41px;
+  height: 41px;
 `;
 const ImageCart = styled.img`
   width: 22px;
